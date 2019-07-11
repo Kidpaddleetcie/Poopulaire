@@ -1,0 +1,4 @@
+let navbar = '<nav class="navbar navbar-expand-lg navbar-brown navbar-fixed-top"> <div class="container"> <a class="navbar-brand poopufont" href="../../index.html">Poopulaire</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav"> <li class="nav-item "> <a class="nav-link" href="actu.html">Actu</a> </li><li class="nav-item "> <a class="nav-link" href="fan_arts.html">Fan-Arts</a> </li><li class="nav-item "> <a class="nav-link" href="sources.html">Sources</a> </li><li><a class="nav-link" href="le_bateau.html">Le bateau</a></li></ul> </div></div></nav>                            ';
+
+
+document.getElementById('header').innerHTML = navbar;
