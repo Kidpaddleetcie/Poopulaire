@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="assets/css/poopulaire.css">
+    <link rel="stylesheet" href="../css/poopulaire.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -10,9 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <title>Acceuil</title>
-    <link rel="icon" href="assets/img/poopulaire-icone.ico" />
-
+    <title>Sources</title>
+    <link rel="icon" href="../img/poopulaire-icone.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
@@ -23,7 +22,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-brown">
-            <a class="navbar-brand poopufont" href="index.html">Poopulaire</a>
+            <a class="navbar-brand poopufont" href="../../index.html">Poopulaire</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,34 +30,64 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link" href="assets/pages/actu.html">Actu</a>
+                        <a class="nav-link" href="actu.html">Actu</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="assets/pages/generator.html">Generator</a>
+                        <a class="nav-link" href="generator.html">Generator</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="assets/pages/rejoins-nous.html">Rejoins-nous</a>
+                        <a class="nav-link" href="rejoins-nous.html">Rejoins-nous</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section class="parallax">
-        <div>
-            <div class="jumbotron vitre">
-                <h1 class="display-4">Bienvenue sur Poopulaire</h1>
-                <p class="lead">Ce site est annexe à la chaîne "Poopulaire" que vous pouvez retrouver à
-                    <a class="btn btn-primary btn-lg"
-                        href="https://www.youtube.com/channel/UCbK5TxzVZrgbcDUT_XsYgVg/videos" role="button">ce lien
-                        !</a>
-                </p>
-                <iframe width="100%" height="275px"
-                    src="https://www.youtube-nocookie.com/embed/videoseries?list=PLKZ5spZyMy_hJ8HIbJg4yNUVhBtt0Secq"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+
+
+    <section>
+        <h1 class="display-4">Rejoignez Poopulaire</h1>
+        <form method="post" action="mailto:poopulaire.rejoins@gmail.com" enctype="text/plain">
+            <div>
+                <p class="alert alert-secondary">Vous voulez rejoindre une communauté de poopeur promulguant la bonne
+                    ambiance ? Veuillez renseigner
+                    les infos nécessaires :3</p>
             </div>
-        </div>
+            <ul class="double-colonne">
+                <li>
+                    <label for="pseudo">Pseudo </label>
+                    <div>
+                        <input name="pseudo" type="text" maxlength="255" value="" required />
+                    </div>
+                </li>
+                <li>
+                    <label for="chaine">Chaîne YouTube || Dailymotion || BitChute || Bit.Tube
+                    </label>
+                    <div>
+                        <input name="chaine" type="text" maxlength="255" value="http://" required />
+                    </div>
+                </li>
+                <li>
+                    <label for="email">Email </label>
+                    <div>
+                        <input name="email" type="text" maxlength="255" value="" required />
+                    </div>
+                </li>
+                <li>
+                    <label for="thing">Un truc à préciser ? </label>
+                    <div>
+                        <textarea name="thing"></textarea>
+                    </div>
+                    <p><small>Des problèmes ? Des idées ? Dîtes-les :3</small></p>
+                </li>
+
+            </ul>
+            <input type="submit" class="btn btn-secondary btn-lg btn-block" name="submit" value="Envoyer" />
+
+        </form>
     </section>
+
+
+
     <footer>
         <nav class="navbar fixed-bottom navbar-brown">
             <a class="navbar-brand poopufont" href="https://www.youtube.com/channel/UCbK5TxzVZrgbcDUT_XsYgVg/videos"><i
